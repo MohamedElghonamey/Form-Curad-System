@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BookMarker</title>
+    <link rel="icon" href="imges/icons8-bookmark-48 (1).png">
+    <link rel="stylesheet" href="/Css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Animation Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--FontGoogle-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,400;0,500;0,700;1,700&family=Source+Sans+3:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+
+<div class="container">
+    <div class="title-card text-center py-5 position-relative ">
+        <h2 class="text-dark animate__animated animate__bounce animate__jackInTheBox ">Bookmarker</h2>
+    </div>
+    <div class="   py-3">
+        <p class="text-center"><i class="fa-solid fa-bookmark text-success"></i>
+            Bookmark your favorite sites <i class="fa-solid fa-bookmark text-success"></i>
+        </p>
+    </div>
+    <div class="form">
+        <div class="bookmarkerName">
+            <label for="bookmarkerName " class="fw-bold text-dark"><i class="fa-solid fa-book-bookmark"></i> Site
+                Name</label>
+            <input type="text" class="form-control my-2 " placeholder="Site Name " id="bookmarkerName" required>
+        </div>
+        <div class="bookmarkerURl ">
+            <label for="bookmarkerURL" class="fw-bold text-dark "> <i class="fa-solid fa-link"></i> Site
+                URL</label>
+            <input type="url" class="form-control my-2 " placeholder="Website URL" id="bookmarkerURL" required>
+
+        </div>
+        <button type="submit" onclick="addBooks();" class=" btn btn-danger ">Submit</button>
+    </div>
+    <table class="table  my-3 mx-auto text-white w-100  mx-auto   ">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>WebsiteName</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </tr>
+
+
+        </thead>
+        <tbody id="tBody">
+
+        </tbody>
+    </table>
+
+</div>
+
+<script src="Scripts/main.js"></script>
+<script src="Scripts/all.min.js"></script>
+</body>
+
+</html>

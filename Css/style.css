@@ -1,0 +1,71 @@
+* {
+}
+body {
+  background-color: rgb(255, 248, 253);
+}
+h2 {
+  position: relative;
+}
+
+.title-card h2 {
+  color: black;
+  position: relative;
+  transition: 3s all;
+}
+.title-card h2::before {
+  content: "";
+  position: absolute;
+  background-color: #fec260;
+  left: 50;
+  bottom: 10px;
+  height: 20%;
+  width: 19%;
+  z-index: -1;
+  transform: translateY(50%);
+  transition: 1s all;
+}
+
+h2:hover::before {
+  transform: translateY(-150%);
+  transition: 1s all;
+  height: 20%;
+}
+
+h2,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pacifico", cursive;
+}
+.icon h5 {
+  font-family: "PT Sans Caption", sans-serif;
+}
+.form {
+  margin: 10px;
+}
+button {
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: d;
+  color: white;
+}
+.form button {
+  padding: 10px 40px;
+  margin-left: calc(40%);
+}
+p {
+  background: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-family: "PT Sans Caption", sans-serif;
+}
+.icon i {
+  background: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
